@@ -1,0 +1,57 @@
+{
+    "bg":"https://img.ibxk.com.br/2015/07/23/23170425700729.jpg?w=328",
+    "title": "Quiz sobre Friends",
+    "description": "Cuidado para não revelar quantas vezes você já assistiu a série",
+    "questions": [
+        {
+            "image": "https://media.giphy.com/media/fX7yJRKepjHsGw7eV5/giphy.gif",
+            "title": "Qual o nome do programa de tv que Ross e Mônica dançam na véspera do reveillon?",
+            "description": "Quem nunca fez a dancinha em casa?",
+            "answer": 4,
+            "alternatives": [
+                "Dick Clark's New Year's Rockin' Eve Party",
+                "Dick Mark's",
+                "New Year's Rockin' Eve Party",
+                "Dick Clark's New Year's Rockin' Eve"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/JGH2CwqB4oqGc/giphy.gif",
+            "title": "Qual o nome da irmã gêmea da Phoebe?",
+            "description": "Séra....",
+            "answer": 1,
+            "alternatives": [
+                "Ursula",
+                "Mônica",
+                "Sabrina",
+                "Carol"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/S6qkS0ETvel6EZat45/giphy.gif",
+            "title": "Quantas vezes o Ross se divorciou?",
+            "description": "We were in a break",
+            "answer": 3,
+            "alternatives": [
+                "uma vez",
+                "cinco vezes",
+                "três vezes",
+                "quatro vezes"
+            ]
+        }
+    ],
+    "external": [
+        ""
+    ],
+    "theme": {
+        "colors": {
+            "primary": "#009688",
+            "secondary": "#1de9b6",
+            "mainBg": "#bedd9a",
+            "contrastText": "#9aa58c",
+            "wrong": "#bf360c",
+            "success": "#039be5"
+        },
+        "borderRadius": "4px"
+    }
+}
