@@ -5,6 +5,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -29,30 +31,37 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>AluraQuiz - Modelo Base</title>
+      </Head>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The legend of zelda</h1>
+            <h1>The Quiz of Friends</h1>
           </Widget.Header>
+          <Widget.Content>
+            <p>Teste os seus conhecimentos sobre a Amazônia brasileira!</p>
+          </Widget.Content>
           <Widget.Content>
             <form onSubmit={function (e) {
               e.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}
             >
-              <input
+              <Widget.Input
                 onChange={function (e) {
                   setName(e.target.value);
                 }}
                 placeholder="Insira seu nome"
               />
-              <button
+              <Widget.Button
                 type="submit"
                 disabled={name === ''}
               >
                 Jogar
                 {name}
-              </button>
+              </Widget.Button>
             </form>
           </Widget.Content>
         </Widget>
